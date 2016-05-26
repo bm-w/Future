@@ -10,7 +10,19 @@
 		B6B371351CF74DBC0027D90F /* Future.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B371201CF74CF00027D90F /* Future.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6B371371CF74DF80027D90F /* FutureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B371361CF74DF80027D90F /* FutureType.swift */; };
 		B6B371401CF75A1F0027D90F /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3713F1CF75A1F0027D90F /* Future.swift */; };
+		B6B3714A1CF75F590027D90F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B371491CF75F590027D90F /* Tests.swift */; };
+		B6B3714C1CF75F590027D90F /* Future.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B3712D1CF74D920027D90F /* Future.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6B3714D1CF75F590027D90F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6B371141CF74CF00027D90F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B3712C1CF74D920027D90F;
+			remoteInfo = "Future-iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B6B371201CF74CF00027D90F /* Future.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Future.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -18,7 +30,21 @@
 		B6B3712D1CF74D920027D90F /* Future.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Future.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B371361CF74DF80027D90F /* FutureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureType.swift; sourceTree = "<group>"; };
 		B6B3713F1CF75A1F0027D90F /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		B6B371471CF75F590027D90F /* FutureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FutureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B371491CF75F590027D90F /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		B6B3714B1CF75F590027D90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6B371441CF75F590027D90F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B3714C1CF75F590027D90F /* Future.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B6B371131CF74CF00027D90F = {
@@ -28,6 +54,7 @@
 				B6B371361CF74DF80027D90F /* FutureType.swift */,
 				B6B3713F1CF75A1F0027D90F /* Future.swift */,
 				B6B371221CF74CF00027D90F /* Info.plist */,
+				B6B371481CF75F590027D90F /* Tests */,
 				B6B3711E1CF74CF00027D90F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -36,8 +63,18 @@
 			isa = PBXGroup;
 			children = (
 				B6B3712D1CF74D920027D90F /* Future.framework */,
+				B6B371471CF75F590027D90F /* FutureTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B6B371481CF75F590027D90F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B6B371491CF75F590027D90F /* Tests.swift */,
+				B6B3714B1CF75F590027D90F /* Info.plist */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,16 +107,37 @@
 			productReference = B6B3712D1CF74D920027D90F /* Future.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B6B371461CF75F590027D90F /* FutureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B371511CF75F590027D90F /* Build configuration list for PBXNativeTarget "FutureTests" */;
+			buildPhases = (
+				B6B371431CF75F590027D90F /* Sources */,
+				B6B371441CF75F590027D90F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6B3714E1CF75F590027D90F /* PBXTargetDependency */,
+			);
+			name = FutureTests;
+			productName = FutureTests;
+			productReference = B6B371471CF75F590027D90F /* FutureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B6B371141CF74CF00027D90F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Bastiaan Marinus van de Weerd";
 				TargetAttributes = {
 					B6B3712C1CF74D920027D90F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B6B371461CF75F590027D90F = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -97,6 +155,7 @@
 			projectRoot = "";
 			targets = (
 				B6B3712C1CF74D920027D90F /* Future-iOS */,
+				B6B371461CF75F590027D90F /* FutureTests */,
 			);
 		};
 /* End PBXProject section */
@@ -111,7 +170,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6B371431CF75F590027D90F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B3714A1CF75F590027D90F /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6B3714E1CF75F590027D90F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6B3712C1CF74D920027D90F /* Future-iOS */;
+			targetProxy = B6B3714D1CF75F590027D90F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B6B371231CF74CF00027D90F /* Debug */ = {
@@ -240,6 +315,26 @@
 			};
 			name = Release;
 		};
+		B6B3714F1CF75F590027D90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.bm-w.FutureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6B371501CF75F590027D90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.bm-w.FutureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -257,6 +352,15 @@
 			buildConfigurations = (
 				B6B371331CF74D920027D90F /* Debug */,
 				B6B371341CF74D920027D90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B371511CF75F590027D90F /* Build configuration list for PBXNativeTarget "FutureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B3714F1CF75F590027D90F /* Debug */,
+				B6B371501CF75F590027D90F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

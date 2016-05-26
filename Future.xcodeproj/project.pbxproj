@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B6B371351CF74DBC0027D90F /* Future.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B371201CF74CF00027D90F /* Future.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6B371371CF74DF80027D90F /* FutureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B371361CF74DF80027D90F /* FutureType.swift */; };
+		B6B371401CF75A1F0027D90F /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3713F1CF75A1F0027D90F /* Future.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B6B371201CF74CF00027D90F /* Future.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Future.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		B6B371221CF74CF00027D90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B3712D1CF74D920027D90F /* Future.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Future.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B371361CF74DF80027D90F /* FutureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureType.swift; sourceTree = "<group>"; };
+		B6B3713F1CF75A1F0027D90F /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -21,6 +25,8 @@
 			isa = PBXGroup;
 			children = (
 				B6B371201CF74CF00027D90F /* Future.h */,
+				B6B371361CF74DF80027D90F /* FutureType.swift */,
+				B6B3713F1CF75A1F0027D90F /* Future.swift */,
 				B6B371221CF74CF00027D90F /* Info.plist */,
 				B6B3711E1CF74CF00027D90F /* Products */,
 			);
@@ -100,6 +106,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B371371CF74DF80027D90F /* FutureType.swift in Sources */,
+				B6B371401CF75A1F0027D90F /* Future.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
